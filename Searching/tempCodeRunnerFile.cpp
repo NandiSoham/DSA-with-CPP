@@ -1,1 +1,2 @@
-int ans = findSqrt(n);
+#include <iostream>
+using namespace std;
