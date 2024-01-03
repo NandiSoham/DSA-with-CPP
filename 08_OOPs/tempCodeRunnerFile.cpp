@@ -46,16 +46,11 @@ class Animal{
     }
 
     //copy constructor
-    Animal(Animal& obj){
-        this->age = obj.age;
+    Animal(Animal obj){
+        this->age = abj.age;
         this->name = obj.name;
         cout << "Copy Constructor Called!"<<endl;
     }
-
-    //creating destructor
-    // ~Animal() {
-    //     cout << "Destructor Called!"<<endl;
-    // }
 };
 
 int main(){
@@ -91,9 +86,8 @@ int main(){
     Animal* lion = new Animal(23);
 
     // calling 'Copy Constructor'
-     Animal tiger(cat); 
-    Animal tiger = cat;
+    Animal tiger = dog;
+    Animal tiger(dog);
     // both of the avobe syntax are correct to call copy constructor
-
     return 0;
 }
