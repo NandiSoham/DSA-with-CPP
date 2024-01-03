@@ -25,8 +25,24 @@ class Animal{
     }
 
     //setter function
-    void setWeight(int w){
-        weight = w;
+    void setWeight(int weight){
+        this -> weight = weight;
+    }
+
+    //constructor
+    //default constructor
+    Animal(){
+
+        this->age = 0;  // initializing with default value
+        this->name = "";    // initializing with default value
+        
+        cout << "constructor called" << endl;
+    }
+
+    //parameterized constructor
+    Animal(int age){
+        this->age = age;
+        cout << "parametrized constructor called" << endl;
     }
 };
 
@@ -58,6 +74,9 @@ int main(){
     dog -> name = "rani";
     dog -> eat();
     dog -> sleep();
+
+    //object call to check if parameterized constructor is getting called or not, here we need to pass the value of age as parameter, because we have passed in parameterized constructor also
+    Animal* lion = new Animal(23);
 
     return 0;
 }
