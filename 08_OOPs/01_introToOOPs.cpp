@@ -13,10 +13,10 @@ class Animal{
 
     // behaviour or method
     void eat(){
-        cout << "The cat is eating ..." << endl;
+        cout << "The animal is eating ..." << endl;
     }
     void sleep(){
-        cout << "The cat is sleeping ..." << endl;
+        cout << "The animal is sleeping ..." << endl;
     }
 
     //getter function
@@ -38,7 +38,7 @@ int main(){
     
     cat.age = 6;
     cat.name = "Lucy";
-    cout << "Age of cat is "<< cat.age <<endl;  //if I want to access any property of that object, I need to use dot operator (.) eg.- .age, .name 
+    cout << "Age of cat is "<< cat.age <<endl;  //if I want to access any property of that object, I need to use dot operator (.) eg-> .age, .name 
     cout << "Name of cat is "<< cat.name << endl;
 
     cat.eat();
@@ -48,6 +48,16 @@ int main(){
     cout << "The weight of the cat is " << cat.getWeight() << endl;
 
     //object creation by dynamic memory
+    Animal* dog = new Animal;
+
+    (*dog).age = 15;
+    (*dog).name = "chase";
+
+    //another way
+    dog -> age = 15;
+    dog -> name = "rani";
+    dog -> eat();
+    dog -> sleep();
 
     return 0;
 }
