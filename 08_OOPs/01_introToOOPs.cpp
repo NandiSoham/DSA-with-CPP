@@ -53,9 +53,9 @@ class Animal{
     }
 
     //creating destructor
-    // ~Animal() {
-    //     cout << "Destructor Called!"<<endl;
-    // }
+    ~Animal() {
+        cout << "Destructor Called!"<<endl;
+    }
 };
 
 int main(){
@@ -91,9 +91,14 @@ int main(){
     Animal* lion = new Animal(23);
 
     // calling 'Copy Constructor'
-     Animal tiger(cat); 
-    Animal tiger = cat;
+    Animal tiger(cat); 
+    Animal lepord = cat;
     // both of the avobe syntax are correct to call copy constructor
+
+    // manually destructor calling (memory deallocation)
+    delete dog;
+    delete lion;
+    cout << "manually destructor calling for objects created using dynamic memory" << endl;
 
     return 0;
 }
