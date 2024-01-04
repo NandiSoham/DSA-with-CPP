@@ -1,10 +1,7 @@
-class Parrot:protected Animal{
-//     public:
-//     print(){
-//         cout << this->weight;
-//     }
-// };
+    void speedUp(){
+            cout<<"The car is going faster."<<endl;
+        }
 
-// class Crow:private Animal{
-    
-// };
+        void pressBreak(){
+            cout<<"The car has stopped."<<endl;
+        }
