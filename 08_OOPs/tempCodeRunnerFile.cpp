@@ -1,7 +1,14 @@
-    void speedUp(){
-            cout<<"The car is going faster."<<endl;
-        }
+class Maths{
+    public:
+    int sum(int a, int b){
+        return a + b;
+    }
 
-        void pressBreak(){
-            cout<<"The car has stopped."<<endl;
-        }
+    int sum(int a, int b, int c){
+        return a + b + c;
+    }
+
+    int sum(int a, float b){
+        return a + b;
+    }
+};
