@@ -1,14 +1,8 @@
-class Maths{
-    public:
-    int sum(int a, int b){
-        return a + b;
-    }
+Animal* a1 = new Animal();
+    a1->speak();
 
-    int sum(int a, int b, int c){
-        return a + b + c;
-    }
+    Dog* d1 = new Dog();
+    d1->speak();
 
-    int sum(int a, float b){
-        return a + b;
-    }
-};
+    Animal* a2 = new Dog();
+    a->speak(); 
