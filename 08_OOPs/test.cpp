@@ -21,7 +21,7 @@ int maxProductSubArray(vector<int> &arr) {
 
 int main()
 {
-    vector<int> arr = {1, 2, -3, 0, -4, -5};
+    vector<int> arr = {-2, 3, -4, 0};
     cout << "The maximum product subarray is: "
          << maxProductSubArray(arr) << "\n";
     return 0;
