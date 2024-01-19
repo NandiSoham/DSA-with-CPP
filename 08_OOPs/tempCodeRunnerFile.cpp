@@ -1,8 +1,4 @@
-Animal* a1 = new Animal();
-    a1->speak();
-
-    Dog* d1 = new Dog();
-    d1->speak();
-
-    Animal* a2 = new Dog();
-    a->speak(); 
+const int x = 10;
+    // //initialize can be done but we can't re-assign a vlue
+    // // x = 10;
+    // cout << "value of x is: " << x << endl;
